@@ -48,3 +48,6 @@ Known issues might change during the early access release, so feel free to check
 {: #RIOS-129}
 - **Symptom:** The names of stock images are different in VPC and VPC on Classic. Expected behavior: The names should be consistent across VPC and VPC on Classic unified images.
 - **Fix:** The image service is being rolled out in VPC on Classic and will be in VPC prior to GA. At that point, unified images will have exact name matches between VPC on Classic and VPC as the same image service will be running in both environments.	
+
+
+## COM-1612
