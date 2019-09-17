@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-08-05"
+lastupdated: "2019-09-17"
 
 keywords: vpc, early access, known issues, bugs
 
@@ -31,11 +31,13 @@ Known issues might change during the early access release, so check back occasio
 - **Symptom:** The VSI cannot be deleted.
 - **Workaround:** Stop the instance before you attempt to delete it.
 
+
 ## COM-1507: Invalid default repository setting in Ubuntu and Debian VSIs
 {: #COM-1507}
 - **Symptom:** The `apt update` command fails on a VSI created on a Debian stock image.
 - **Workaround:** Update `/etc/apt/sources.list`, and replace `mirrors.service.networklayer.com` with `mirrors.adn.networklayer.com`. 
 - **Fix:** Update the default `source.list` to use `mirrors.adn.networklayer.com`. Add an `APT` stanza in `cloud-init` to overwrite fully qualified domain name that is hard coded in Linux images
+
 
 ## RIOS-129: Inconsistent image names between VPC and VPC on Classic
 {: #RIOS-129}
